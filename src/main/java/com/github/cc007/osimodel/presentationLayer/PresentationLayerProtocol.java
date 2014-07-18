@@ -14,13 +14,12 @@ import com.github.cc007.osimodel.applicationLayer.ApplicationLayerProtocol;
 public interface PresentationLayerProtocol {
 
     /**
-     * get presentation layer protocol type
+     * get the presentation layer protocol type
      *
-     * @return presentation layer protocol type
+     * @return the presentation layer protocol type
      */
     public int getPresentationLayerProtocolType();
 
-    // content
     /**
      * set the content, which follows a application layer protocol
      *
@@ -52,9 +51,9 @@ public interface PresentationLayerProtocol {
     /**
      * set the compression type of the content
      *
-     * @param dataFormattingType the compression type
+     * @param compressionType the compression type
      */
-    public void setCompressionType(int dataFormattingType);
+    public void setCompressionType(int compressionType);
 
     /**
      * get the compression type of the content
@@ -66,9 +65,9 @@ public interface PresentationLayerProtocol {
     /**
      * set the encryption type of the content
      *
-     * @param dataFormattingType the encryption type
+     * @param encryptionType the encryption type
      */
-    public void setEncryptionType(int dataFormattingType);
+    public void setEncryptionType(int encryptionType);
 
     /**
      * get the encryption type of the content
