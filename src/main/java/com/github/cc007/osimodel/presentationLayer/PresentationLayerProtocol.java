@@ -13,6 +13,12 @@ import com.github.cc007.osimodel.applicationLayer.ApplicationLayerProtocol;
  */
 public interface PresentationLayerProtocol {
 
+    public static final int DATA_FORMATTING_UTF8 = 0;
+    
+    public static final int COMPRESSION_CLEAR_TEXT = 0;
+
+    public static final int ENCRYPTION_UNENCRYPTED = 0;
+
     /**
      * get the presentation layer protocol type
      *
