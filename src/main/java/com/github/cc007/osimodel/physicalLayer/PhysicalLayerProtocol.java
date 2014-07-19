@@ -7,12 +7,13 @@
 package com.github.cc007.osimodel.physicalLayer;
 
 import com.github.cc007.osimodel.datalinkLayer.DatalinkLayerProtocol;
+import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface PhysicalLayerProtocol {
+public interface PhysicalLayerProtocol extends Serializable{
     public void setFrame(DatalinkLayerProtocol frame);
     public DatalinkLayerProtocol getFrame();
 }

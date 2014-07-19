@@ -6,10 +6,12 @@
 
 package com.github.cc007.osimodel.applicationLayer;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Rik
  */
-public interface ApplicationLayerProtocol {
+public interface ApplicationLayerProtocol extends Serializable{
     
 }

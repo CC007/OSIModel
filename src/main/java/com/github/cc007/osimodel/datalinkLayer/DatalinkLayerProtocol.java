@@ -6,11 +6,13 @@
 
 package com.github.cc007.osimodel.datalinkLayer;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Rik
  */
-public interface DatalinkLayerProtocol {
+public interface DatalinkLayerProtocol extends Serializable{
     public void setFrame(DatalinkLayerProtocol frame);
     public DatalinkLayerProtocol setFrame();
 }

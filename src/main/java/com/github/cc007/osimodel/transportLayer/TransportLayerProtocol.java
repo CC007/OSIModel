@@ -7,12 +7,13 @@
 package com.github.cc007.osimodel.transportLayer;
 
 import com.github.cc007.osimodel.sessionLayer.SessionLayerProtocol;
+import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface TransportLayerProtocol {
-    public void setSessionData(SessionLayerProtocol sessionData);
-    public SessionLayerProtocol getSessionData();
+public interface TransportLayerProtocol extends Serializable{
+    public void setSessionProtocolDataUnit(SessionLayerProtocol sessionProtocolDataUnit);
+    public SessionLayerProtocol getSessionProtocolDataUnit();
 }

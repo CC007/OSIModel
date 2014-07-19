@@ -6,12 +6,13 @@
 package com.github.cc007.osimodel.presentationLayer;
 
 import com.github.cc007.osimodel.applicationLayer.ApplicationLayerProtocol;
+import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface PresentationLayerProtocol {
+public interface PresentationLayerProtocol extends Serializable{
 
     public static final int DATA_FORMATTING_UTF8 = 0;
     
@@ -29,16 +30,16 @@ public interface PresentationLayerProtocol {
     /**
      * set the content, which follows a application layer protocol
      *
-     * @param applicationData the content
+     * @param applicationProtocolDataUnit the content
      */
-    public void setApplicationData(ApplicationLayerProtocol applicationData);
+    public void setApplicationProtocolDataUnit(ApplicationLayerProtocol applicationProtocolDataUnit);
 
     /**
      * get the content, which follows a application layer protocol
      *
      * @return the content
      */
-    public ApplicationLayerProtocol getApplicationData();
+    public ApplicationLayerProtocol getApplicationProtocolDataUnit();
 
     /**
      * set the data formatting type of the content

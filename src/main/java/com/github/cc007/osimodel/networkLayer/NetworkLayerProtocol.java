@@ -7,12 +7,13 @@
 package com.github.cc007.osimodel.networkLayer;
 
 import com.github.cc007.osimodel.transportLayer.TransportLayerProtocol;
+import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface NetworkLayerProtocol {
+public interface NetworkLayerProtocol extends Serializable{
     public void setSegment(TransportLayerProtocol segment);
     public TransportLayerProtocol getSegment();
 }
