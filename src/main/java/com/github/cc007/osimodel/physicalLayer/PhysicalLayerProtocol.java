@@ -17,14 +17,14 @@ import java.io.Serializable;
 public interface PhysicalLayerProtocol extends Serializable {
 
     /**
-     * set the content, which follows a network layer protocol
+     * set the content, which follows a data link layer protocol
      *
      * @param frame
      */
     public void setFrame(DatalinkLayerProtocol frame);
 
     /**
-     * get the content, which follows a network layer protocol
+     * get the content, which follows a data link layer protocol
      *
      * @return
      */
