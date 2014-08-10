@@ -13,6 +13,6 @@ import java.io.Serializable;
  * @author Rik
  */
 public interface DatalinkLayerProtocol extends Serializable{
-    public void setFrame(DatalinkLayerProtocol frame);
+    public void setFrame(DatalinkLayerProtocol datagram);
     public DatalinkLayerProtocol setFrame();
 }
