@@ -12,10 +12,10 @@ import com.github.cc007.osimodel.applicationLayer.ApplicationLayerProtocol;
  *
  * @author Rik
  */
-public interface PresentationLayerProtocol extends Collapsable{
+public interface PresentationLayerProtocol extends Collapsable {
 
     public static final int DATA_FORMATTING_UTF8 = 0;
-    
+
     public static final int COMPRESSION_CLEAR_TEXT = 0;
 
     public static final int ENCRYPTION_UNENCRYPTED = 0;

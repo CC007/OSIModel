@@ -12,7 +12,7 @@ import com.github.cc007.osimodel.presentationLayer.PresentationLayerProtocol;
  *
  * @author Rik
  */
-public interface SessionLayerProtocol extends Collapsable{
+public interface SessionLayerProtocol extends Collapsable {
 
     /**
      * get the session layer protocol type

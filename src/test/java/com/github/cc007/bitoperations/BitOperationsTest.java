@@ -46,7 +46,7 @@ public class BitOperationsTest {
         System.out.println("setBit");
         int pos = 11;
         int val = 1;
-         byte[] expResult = new byte[2];
+        byte[] expResult = new byte[2];
         expResult[0] = (byte) 0x00FF; // binary: 11111111  
         expResult[1] = (byte) 0x0010; // binary: 00010000
         byte[] result = new byte[2];
@@ -64,7 +64,7 @@ public class BitOperationsTest {
         System.out.println(" Expected value: " + Integer.toString(expResult[0], 2) + " " + Integer.toString(expResult[1], 2));
         System.out.println(" Real value: " + Integer.toString(result[0], 2) + " " + Integer.toString(result[1], 2));
         Assert.assertArrayEquals(expResult, result);
-        
+
     }
 
     /**
