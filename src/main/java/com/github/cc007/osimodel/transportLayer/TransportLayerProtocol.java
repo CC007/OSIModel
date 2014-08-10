@@ -6,14 +6,14 @@
 
 package com.github.cc007.osimodel.transportLayer;
 
+import com.github.cc007.osimodel.Collapsable;
 import com.github.cc007.osimodel.sessionLayer.SessionLayerProtocol;
-import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface TransportLayerProtocol extends Serializable{
+public interface TransportLayerProtocol extends Collapsable{
     public void setSessionProtocolDataUnit(SessionLayerProtocol sessionProtocolDataUnit);
     public SessionLayerProtocol getSessionProtocolDataUnit();
 }

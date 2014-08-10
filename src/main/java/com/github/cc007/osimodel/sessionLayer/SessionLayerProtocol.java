@@ -5,14 +5,14 @@
  */
 package com.github.cc007.osimodel.sessionLayer;
 
+import com.github.cc007.osimodel.Collapsable;
 import com.github.cc007.osimodel.presentationLayer.PresentationLayerProtocol;
-import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface SessionLayerProtocol extends Serializable{
+public interface SessionLayerProtocol extends Collapsable{
 
     /**
      * get the session layer protocol type

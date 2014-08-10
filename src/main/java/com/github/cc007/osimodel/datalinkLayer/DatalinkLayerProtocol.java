@@ -6,13 +6,13 @@
 
 package com.github.cc007.osimodel.datalinkLayer;
 
-import java.io.Serializable;
+import com.github.cc007.osimodel.Collapsable;
 
 /**
  *
  * @author Rik
  */
-public interface DatalinkLayerProtocol extends Serializable{
+public interface DatalinkLayerProtocol extends Collapsable{
     public void setDatagram(DatalinkLayerProtocol datagram);
     public DatalinkLayerProtocol setDatagram();
 }

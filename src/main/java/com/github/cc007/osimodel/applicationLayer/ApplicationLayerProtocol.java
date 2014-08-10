@@ -3,15 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package com.github.cc007.osimodel.applicationLayer;
 
-import java.io.Serializable;
+import com.github.cc007.osimodel.Collapsable;
 
 /**
  *
  * @author Rik
  */
-public interface ApplicationLayerProtocol extends Serializable{
-    
+public interface ApplicationLayerProtocol extends Collapsable {
+
 }

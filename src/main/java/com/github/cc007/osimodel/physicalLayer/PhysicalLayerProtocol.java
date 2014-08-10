@@ -5,8 +5,8 @@
  */
 package com.github.cc007.osimodel.physicalLayer;
 
+import com.github.cc007.osimodel.Collapsable;
 import com.github.cc007.osimodel.datalinkLayer.DatalinkLayerProtocol;
-import java.io.Serializable;
 
 /**
  * For simulation purposes only, it will simulate how data is transferred from
@@ -14,7 +14,7 @@ import java.io.Serializable;
  *
  * @author Rik
  */
-public interface PhysicalLayerProtocol extends Serializable {
+public interface PhysicalLayerProtocol extends Collapsable {
 
     /**
      * set the content, which follows a data link layer protocol

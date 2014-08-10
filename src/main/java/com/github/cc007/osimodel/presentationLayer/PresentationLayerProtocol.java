@@ -5,14 +5,14 @@
  */
 package com.github.cc007.osimodel.presentationLayer;
 
+import com.github.cc007.osimodel.Collapsable;
 import com.github.cc007.osimodel.applicationLayer.ApplicationLayerProtocol;
-import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface PresentationLayerProtocol extends Serializable{
+public interface PresentationLayerProtocol extends Collapsable{
 
     public static final int DATA_FORMATTING_UTF8 = 0;
     

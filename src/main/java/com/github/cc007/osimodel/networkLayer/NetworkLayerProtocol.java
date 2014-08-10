@@ -6,14 +6,14 @@
 
 package com.github.cc007.osimodel.networkLayer;
 
+import com.github.cc007.osimodel.Collapsable;
 import com.github.cc007.osimodel.transportLayer.TransportLayerProtocol;
-import java.io.Serializable;
 
 /**
  *
  * @author Rik
  */
-public interface NetworkLayerProtocol extends Serializable{
+public interface NetworkLayerProtocol extends Collapsable{
     public void setSegment(TransportLayerProtocol segment);
     public TransportLayerProtocol getSegment();
 }
