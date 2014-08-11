@@ -16,4 +16,15 @@ public interface DatalinkLayerProtocol extends Collapsable {
     public void setDatagram(DatalinkLayerProtocol datagram);
 
     public DatalinkLayerProtocol setDatagram();
+    
+    public byte[] getSource();
+    
+    public void setSource();
+    
+    public byte[] getDestination();
+    
+    public void setDestination(byte[] destination);
+    
+    public void correctErrors();
+    
 }
