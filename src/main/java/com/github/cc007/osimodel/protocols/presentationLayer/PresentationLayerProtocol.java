@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.cc007.osimodel.presentationLayer;
+package com.github.cc007.osimodel.protocols.presentationLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.Encryptable;
-import com.github.cc007.osimodel.applicationLayer.ApplicationLayerProtocol;
+import com.github.cc007.osimodel.protocols.applicationLayer.ApplicationLayerProtocol;
 import com.github.cc007.osimodel.keyfeatures.Compressable;
 
 /**

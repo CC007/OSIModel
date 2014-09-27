@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.cc007.osimodel.datalinkLayer;
+package com.github.cc007.osimodel.protocols.datalinkLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.Correctable;

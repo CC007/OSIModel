@@ -6,7 +6,7 @@
 package com.github.cc007.osimodel.physicalLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
-import com.github.cc007.osimodel.datalinkLayer.DatalinkLayerProtocol;
+import com.github.cc007.osimodel.protocols.datalinkLayer.DatalinkLayerProtocol;
 
 /**
  * For simulation purposes only, it will simulate how data is transferred from

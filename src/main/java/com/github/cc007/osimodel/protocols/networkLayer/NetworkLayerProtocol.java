@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.cc007.osimodel.networkLayer;
+package com.github.cc007.osimodel.protocols.networkLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.Routable;
-import com.github.cc007.osimodel.transportLayer.TransportLayerProtocol;
+import com.github.cc007.osimodel.protocols.transportLayer.TransportLayerProtocol;
 
 /**
  *

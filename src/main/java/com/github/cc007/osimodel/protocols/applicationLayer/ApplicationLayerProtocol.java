@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.cc007.osimodel.applicationLayer;
+package com.github.cc007.osimodel.protocols.applicationLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
 

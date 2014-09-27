@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.cc007.osimodel.sessionLayer;
+package com.github.cc007.osimodel.protocols.sessionLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
-import com.github.cc007.osimodel.presentationLayer.PresentationLayerProtocol;
+import com.github.cc007.osimodel.protocols.presentationLayer.PresentationLayerProtocol;
 
 /**
  *
