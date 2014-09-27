@@ -6,19 +6,21 @@
 package com.github.cc007.osimodel.datalinkLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.Correctable;
+import com.github.cc007.osimodel.keyfeatures.Routable;
 
 /**
  *
  * @author Rik
  */
-public interface DatalinkLayerProtocol extends Collapsable {
+public abstract class DatalinkLayerProtocol implements Collapsable, Correctable, Routable {
 
     /**
      * set the content, which follows a network layer protocol
      *
      * @param datagram
      */
-    public void setDatagram(DatalinkLayerProtocol datagram);
+    public abstract void setDatagram(DatalinkLayerProtocol datagram);
 
 
     /**
@@ -26,14 +28,6 @@ public interface DatalinkLayerProtocol extends Collapsable {
      *
      * @return
      */
-    public DatalinkLayerProtocol getDatagram();
-    
-    public byte[] getSource();
-    
-    public void setSource();
-    
-    public byte[] getDestination();
-    
-    public void setDestination(byte[] destination);
+    public abstract DatalinkLayerProtocol getDatagram();
     
 }
