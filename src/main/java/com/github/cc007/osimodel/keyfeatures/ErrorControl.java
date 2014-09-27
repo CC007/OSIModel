@@ -9,7 +9,7 @@ package com.github.cc007.osimodel.keyfeatures;
  *
  * @author Rik
  */
-public interface Correctable {
+public interface ErrorControl {
 
     /**
      * Look in the data presented in this class and correct any errors that were
