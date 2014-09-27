@@ -5,7 +5,7 @@
  */
 package com.github.cc007.osimodel.transportLayer;
 
-import com.github.cc007.osimodel.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.sessionLayer.SessionLayerProtocol;
 
 /**

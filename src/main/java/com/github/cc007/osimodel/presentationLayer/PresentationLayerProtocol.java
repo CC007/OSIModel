@@ -5,20 +5,20 @@
  */
 package com.github.cc007.osimodel.presentationLayer;
 
-import com.github.cc007.osimodel.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.Encryptable;
 import com.github.cc007.osimodel.applicationLayer.ApplicationLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public interface PresentationLayerProtocol extends Collapsable {
+public interface PresentationLayerProtocol extends Collapsable, Encryptable {
 
     public static final int DATA_FORMATTING_UTF8 = 0;
 
     public static final int COMPRESSION_CLEAR_TEXT = 0;
 
-    public static final int ENCRYPTION_UNENCRYPTED = 0;
 
     /**
      * get the presentation layer protocol type
@@ -69,17 +69,4 @@ public interface PresentationLayerProtocol extends Collapsable {
      */
     public int getCompressionType();
 
-    /**
-     * set the encryption type of the content
-     *
-     * @param encryptionType the encryption type
-     */
-    public void setEncryptionType(int encryptionType);
-
-    /**
-     * get the encryption type of the content
-     *
-     * @return the encryption type
-     */
-    public int getEncryptionType();
 }

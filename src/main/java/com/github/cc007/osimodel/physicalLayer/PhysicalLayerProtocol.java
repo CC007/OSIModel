@@ -5,7 +5,7 @@
  */
 package com.github.cc007.osimodel.physicalLayer;
 
-import com.github.cc007.osimodel.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.datalinkLayer.DatalinkLayerProtocol;
 
 /**
