@@ -11,8 +11,6 @@ import com.github.cc007.osimodel.keyfeatures.Addressing;
 import com.github.cc007.osimodel.keyfeatures.MediaAccessControl;
 
 /**
- * Main features:
- * - Encapsulation of network layer
  * 
  * @author Rik
  */
