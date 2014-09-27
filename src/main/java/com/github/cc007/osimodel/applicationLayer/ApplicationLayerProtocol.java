@@ -11,6 +11,6 @@ import com.github.cc007.osimodel.keyfeatures.Collapsable;
  *
  * @author Rik
  */
-public interface ApplicationLayerProtocol extends Collapsable {
+public abstract class ApplicationLayerProtocol implements Collapsable {
 
 }

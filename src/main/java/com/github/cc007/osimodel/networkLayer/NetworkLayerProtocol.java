@@ -6,13 +6,14 @@
 package com.github.cc007.osimodel.networkLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.Routable;
 import com.github.cc007.osimodel.transportLayer.TransportLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public interface NetworkLayerProtocol extends Collapsable {
+public interface NetworkLayerProtocol extends Collapsable, Routable {
 
     /**
      * set the content, which follows a transport layer protocol
