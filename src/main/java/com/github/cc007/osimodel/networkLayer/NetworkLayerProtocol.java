@@ -14,7 +14,17 @@ import com.github.cc007.osimodel.transportLayer.TransportLayerProtocol;
  */
 public interface NetworkLayerProtocol extends Collapsable {
 
+    /**
+     * set the content, which follows a transport layer protocol
+     *
+     * @param segment
+     */
     public void setSegment(TransportLayerProtocol segment);
 
+    /**
+     * get the content, which follows a transport layer protocol
+     *
+     * @return
+     */
     public TransportLayerProtocol getSegment();
 }

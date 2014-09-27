@@ -14,7 +14,18 @@ import com.github.cc007.osimodel.sessionLayer.SessionLayerProtocol;
  */
 public interface TransportLayerProtocol extends Collapsable {
 
+    /**
+     * set the content, which follows a session layer protocol
+     *
+     * @param sessionProtocolDataUnit
+     */
+
     public void setSessionProtocolDataUnit(SessionLayerProtocol sessionProtocolDataUnit);
 
+    /**
+     * get the content, which follows a session layer protocol
+     *
+     * @return
+     */
     public SessionLayerProtocol getSessionProtocolDataUnit();
 }
