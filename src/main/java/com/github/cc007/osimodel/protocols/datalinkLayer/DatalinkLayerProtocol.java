@@ -7,7 +7,8 @@ package com.github.cc007.osimodel.protocols.datalinkLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.LogicalLinkControl;
-import com.github.cc007.osimodel.keyfeatures.Routable;
+import com.github.cc007.osimodel.keyfeatures.Addressing;
+import com.github.cc007.osimodel.keyfeatures.MediaAccessControl;
 
 /**
  * Main features:
@@ -15,7 +16,7 @@ import com.github.cc007.osimodel.keyfeatures.Routable;
  * 
  * @author Rik
  */
-public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkControl, Routable {
+public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkControl, MediaAccessControl {
 
     /**
      * set the content, which follows a network layer protocol

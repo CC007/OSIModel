@@ -9,7 +9,7 @@ package com.github.cc007.osimodel.keyfeatures;
  *
  * @author Rik
  */
-public interface Compressable {
+public interface CompressionControl {
 
     public static final int COMPRESSION_CLEAR_TEXT = 0;
 

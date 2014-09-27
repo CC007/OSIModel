@@ -6,15 +6,15 @@
 package com.github.cc007.osimodel.protocols.presentationLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
-import com.github.cc007.osimodel.keyfeatures.Encryptable;
+import com.github.cc007.osimodel.keyfeatures.EncryptionControl;
 import com.github.cc007.osimodel.protocols.applicationLayer.ApplicationLayerProtocol;
-import com.github.cc007.osimodel.keyfeatures.Compressable;
+import com.github.cc007.osimodel.keyfeatures.CompressionControl;
 
 /**
  *
  * @author Rik
  */
-public interface PresentationLayerProtocol extends Collapsable, Encryptable, Compressable {
+public interface PresentationLayerProtocol extends Collapsable, EncryptionControl, CompressionControl {
 
     public static final int DATA_FORMATTING_UTF8 = 0;
 

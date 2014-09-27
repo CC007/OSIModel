@@ -11,7 +11,7 @@ import com.github.cc007.osimodel.Address;
  *
  * @author Rik
  */
-public interface Routable {
+public interface Addressing {
 
     /**
      * Get the source of the data transfer

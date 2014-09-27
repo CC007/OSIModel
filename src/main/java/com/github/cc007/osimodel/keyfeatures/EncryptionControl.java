@@ -9,7 +9,7 @@ package com.github.cc007.osimodel.keyfeatures;
  *
  * @author Rik
  */
-public interface Encryptable {
+public interface EncryptionControl {
     public static final int ENCRYPTABLE_UNENCRYPTED = 0;
 
     /**
