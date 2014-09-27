@@ -13,19 +13,19 @@ import com.github.cc007.osimodel.protocols.transportLayer.TransportLayerProtocol
  *
  * @author Rik
  */
-public interface NetworkLayerProtocol extends Collapsable, Routable {
+public abstract class NetworkLayerProtocol implements Collapsable, Routable {
 
     /**
      * set the content, which follows a transport layer protocol
      *
      * @param segment
      */
-    public void setSegment(TransportLayerProtocol segment);
+    public abstract void setSegment(TransportLayerProtocol segment);
 
     /**
      * get the content, which follows a transport layer protocol
      *
      * @return
      */
-    public TransportLayerProtocol getSegment();
+    public abstract TransportLayerProtocol getSegment();
 }

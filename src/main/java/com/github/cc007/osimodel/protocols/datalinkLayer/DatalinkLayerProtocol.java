@@ -6,14 +6,16 @@
 package com.github.cc007.osimodel.protocols.datalinkLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
-import com.github.cc007.osimodel.keyfeatures.Correctable;
+import com.github.cc007.osimodel.keyfeatures.LogicalLinkControl;
 import com.github.cc007.osimodel.keyfeatures.Routable;
 
 /**
- *
+ * Main features:
+ * - Encapsulation of network layer
+ * 
  * @author Rik
  */
-public abstract class DatalinkLayerProtocol implements Collapsable, Correctable, Routable {
+public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkControl, Routable {
 
     /**
      * set the content, which follows a network layer protocol
