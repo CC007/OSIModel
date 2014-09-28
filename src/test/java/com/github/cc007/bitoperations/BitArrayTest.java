@@ -18,31 +18,74 @@ import static org.junit.Assert.*;
  * @author Rik
  */
 public class BitArrayTest {
-
+    
     public BitArrayTest() {
     }
-
+    
     @BeforeClass
     public static void setUpClass() {
     }
-
+    
     @AfterClass
     public static void tearDownClass() {
     }
-
+    
     @Before
     public void setUp() {
     }
-
+    
     @After
     public void tearDown() {
     }
 
     /**
-     * Test of setBit method, of class BitOperations.
+     * Test of toByteArray method, of class BitArray.
      */
     @Test
-    public void testSetBit() {
+    public void testToByteArray() {
+        System.out.println("toByteArray");
+        BitArray instance = null;
+        byte[] expResult = null;
+        byte[] result = instance.toByteArray();
+        assertArrayEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setBit method, of class BitArray.
+     */
+    @Test
+    public void testSetBit_int_int() {
+        System.out.println("setBit");
+        int pos = 0;
+        int val = 0;
+        BitArray instance = null;
+        instance.setBit(pos, val);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getBit method, of class BitArray.
+     */
+    @Test
+    public void testGetBit_int() {
+        System.out.println("getBit");
+        int pos = 0;
+        BitArray instance = null;
+        int expResult = 0;
+        int result = instance.getBit(pos);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setBit method, of class BitArray.
+     */
+    @Test
+    public void testSetBit_3args() {
         System.out.println("setBit");
         int pos = 11;
         int val = 1;
@@ -64,14 +107,13 @@ public class BitArrayTest {
         System.out.println(" Expected value: " + Integer.toString(expResult[0], 2) + " " + Integer.toString(expResult[1], 2));
         System.out.println(" Real value: " + Integer.toString(result[0], 2) + " " + Integer.toString(result[1], 2));
         Assert.assertArrayEquals(expResult, result);
-
     }
 
     /**
-     * Test of getBit method, of class BitOperations.
+     * Test of getBit method, of class BitArray.
      */
     @Test
-    public void testGetBit() {
+    public void testGetBit_byteArr_int() {
         System.out.println("getBit");
         byte[] data = new byte[2];
         data[0] = (byte) 0x00FF; // binary: 11111111  
@@ -85,5 +127,5 @@ public class BitArrayTest {
         result = BitArray.getBit(data, pos);
         assertEquals(expResult, result);
     }
-
+    
 }

@@ -50,6 +50,14 @@ public class BitArray {
         this.bitArray = Arrays.copyOf(bitArray, (length - 1) / 8 + 1);
     }
 
+    /**
+     * Return the byte array, corresponding to the bit array
+     *
+     * If the bit array doesn't have a length that is dividable by 8, the last
+     * byte of the returned byte array is padded with random bits
+     *
+     * @return
+     */
     public byte[] toByteArray() {
         return bitArray;
     }
@@ -60,7 +68,7 @@ public class BitArray {
      * @param pos the position of the bit you want to change
      * @param val the value (0 or 1) you want to set the bit to
      */
-    public void setBit(int pos, int val) {
+    public void setBit(int pos, int val) throws ArrayIndexOutOfBoundsException, IllegalArgumentException {
         if (pos >= length) {
             throw new ArrayIndexOutOfBoundsException("The position that you wanted to change is longer than the length of this bit array!");
         }
@@ -81,7 +89,7 @@ public class BitArray {
      * @param pos the position of the bit you want to retrieve
      * @return the value of the bit
      */
-    public int getBit(int pos) {
+    public int getBit(int pos) throws ArrayIndexOutOfBoundsException {
         if (pos >= length) {
             throw new ArrayIndexOutOfBoundsException("The position that you wanted to retrieve is longer than the length of this bit array!");
         }
@@ -92,15 +100,15 @@ public class BitArray {
         return valInt;
     }
 
-
     /**
-     * Static version: set a bit at a certain position in a given byte array to a certain value (0 or 1)
+     * Static version: set a bit at a certain position in a given byte array to
+     * a certain value (0 or 1)
      *
      * @param data the byte array to retrieve the data from
      * @param pos the position of the bit you want to change
      * @param val the value (0 or 1) you want to set the bit to
      */
-    public static void setBit(byte[] data, int pos, int val) {
+    public static void setBit(byte[] data, int pos, int val) throws ArrayIndexOutOfBoundsException, IllegalArgumentException {
         if (pos >= data.length * 8) {
             throw new ArrayIndexOutOfBoundsException("The provided input was shorter then the position that you wanted to change!");
         }
@@ -115,15 +123,14 @@ public class BitArray {
         data[posByte] = newByte;
     }
 
-
     /**
-     * Static version: get the bit at a certain position from a given byte array 
+     * Static version: get the bit at a certain position from a given byte array
      *
      * @param data the byte array to retrieve the data from
      * @param pos the position of the bit you want to retrieve
      * @return the value of the bit
      */
-    public static int getBit(byte[] data, int pos) {
+    public static int getBit(byte[] data, int pos) throws ArrayIndexOutOfBoundsException {
         if (pos >= data.length * 8) {
             throw new ArrayIndexOutOfBoundsException("The provided input was shorter then the position that you wanted to retrieve!");
         }
