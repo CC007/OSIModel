@@ -6,60 +6,25 @@
 package com.github.cc007.osimodel.protocols.sessionLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.SessionRestoration;
 import com.github.cc007.osimodel.protocols.presentationLayer.PresentationLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public interface SessionLayerProtocol extends Collapsable {
-
-    /**
-     * get the session layer protocol type
-     *
-     * @return the session layer protocol type
-     */
-    public int getSessionLayerProtocol();
-
+public abstract class SessionLayerProtocol implements Collapsable, SessionRestoration {
     /**
      * set the content, which follows a presentation layer protocol
      *
      * @param presentationProtocolDataUnit the content
      */
-    public void setPresentationProtocolDataUnit(PresentationLayerProtocol presentationProtocolDataUnit);
+    public abstract void setPresentationProtocolDataUnit(PresentationLayerProtocol presentationProtocolDataUnit);
 
     /**
      * get the content, which follows a presentation layer protocol
      *
      * @return the content
      */
-    public PresentationLayerProtocol getPresentationProtocolDataUnit();
-
-    /**
-     * set the session ID of the session
-     *
-     * @param sessionID the session ID
-     */
-    public void setSessionID(long sessionID);
-
-    /**
-     * set the session ID of the session
-     *
-     * @return the session ID
-     */
-    public long getSessionID();
-
-    /**
-     * set the sequence number of the specified session
-     *
-     * @param sequenceNumber the sequence number
-     */
-    public void setSequenceNumber(long sequenceNumber);
-
-    /**
-     * get the sequence number of the specified session
-     *
-     * @return the sequence number
-     */
-    public long getSequenceNumber();
+    public abstract PresentationLayerProtocol getPresentationProtocolDataUnit();
 }

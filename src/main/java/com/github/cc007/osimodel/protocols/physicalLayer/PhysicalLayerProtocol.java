@@ -14,19 +14,19 @@ import com.github.cc007.osimodel.protocols.datalinkLayer.DatalinkLayerProtocol;
  *
  * @author Rik
  */
-public interface PhysicalLayerProtocol extends Collapsable {
+public abstract class PhysicalLayerProtocol implements Collapsable {
 
     /**
      * set the content, which follows a data link layer protocol
      *
      * @param frame
      */
-    public void setFrame(DatalinkLayerProtocol frame);
+    public abstract void setFrame(DatalinkLayerProtocol frame);
 
     /**
      * get the content, which follows a data link layer protocol
      *
      * @return
      */
-    public DatalinkLayerProtocol getFrame();
+    public abstract DatalinkLayerProtocol getFrame();
 }
