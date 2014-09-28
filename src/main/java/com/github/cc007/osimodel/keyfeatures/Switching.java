@@ -9,6 +9,6 @@ package com.github.cc007.osimodel.keyfeatures;
  *
  * @author Rik
  */
-public interface LANSwitching {
+public interface Switching {
     
 }
