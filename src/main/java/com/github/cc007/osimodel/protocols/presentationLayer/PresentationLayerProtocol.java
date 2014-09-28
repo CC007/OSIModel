@@ -17,6 +17,7 @@ import com.github.cc007.osimodel.keyfeatures.CompressionControl;
 public interface PresentationLayerProtocol extends Collapsable, EncryptionControl, CompressionControl {
 
     public static final int DATA_FORMATTING_UTF8 = 0;
+
     /**
      * set the content, which follows a application layer protocol
      *

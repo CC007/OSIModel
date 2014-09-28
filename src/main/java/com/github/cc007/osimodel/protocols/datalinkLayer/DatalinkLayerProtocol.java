@@ -11,7 +11,7 @@ import com.github.cc007.osimodel.keyfeatures.MediaAccessControl;
 import com.github.cc007.osimodel.keyfeatures.ProtocolControl;
 
 /**
- * 
+ *
  * @author Rik
  */
 public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkControl, MediaAccessControl, ProtocolControl {
@@ -23,12 +23,11 @@ public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkC
      */
     public abstract void setDatagram(DatalinkLayerProtocol datagram);
 
-
     /**
      * get the content, which follows a network layer protocol
      *
      * @return
      */
     public abstract DatalinkLayerProtocol getDatagram();
-    
+
 }

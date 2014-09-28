@@ -14,6 +14,7 @@ import com.github.cc007.osimodel.protocols.presentationLayer.PresentationLayerPr
  * @author Rik
  */
 public abstract class SessionLayerProtocol implements Collapsable, SessionRestoration {
+
     /**
      * set the content, which follows a presentation layer protocol
      *

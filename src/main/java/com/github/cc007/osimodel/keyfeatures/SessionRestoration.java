@@ -38,5 +38,5 @@ public interface SessionRestoration {
      * @return the sequence number
      */
     public long getSequenceNumber();
-    
+
 }

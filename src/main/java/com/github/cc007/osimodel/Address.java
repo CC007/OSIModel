@@ -7,9 +7,9 @@ package com.github.cc007.osimodel;
 
 /**
  * This is the overlying interface for any addressing conventions and protocols
- * 
+ *
  * @author Rik
  */
 public interface Address {
-    
+
 }

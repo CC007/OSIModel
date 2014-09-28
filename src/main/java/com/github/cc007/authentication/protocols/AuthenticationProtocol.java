@@ -10,5 +10,5 @@ package com.github.cc007.authentication.protocols;
  * @author Rik
  */
 public interface AuthenticationProtocol {
-    
+
 }

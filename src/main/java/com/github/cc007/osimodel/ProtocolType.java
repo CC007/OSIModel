@@ -10,5 +10,5 @@ package com.github.cc007.osimodel;
  * @author Rik
  */
 public interface ProtocolType {
-    
+
 }

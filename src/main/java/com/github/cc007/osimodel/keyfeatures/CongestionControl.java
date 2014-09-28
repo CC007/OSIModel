@@ -10,5 +10,5 @@ package com.github.cc007.osimodel.keyfeatures;
  * @author Rik
  */
 public interface CongestionControl {
-    
+
 }

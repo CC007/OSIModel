@@ -16,14 +16,13 @@ import com.github.cc007.osimodel.protocols.sessionLayer.SessionLayerProtocol;
  *
  * @author Rik
  */
-public abstract class TransportLayerProtocol implements Collapsable, ErrorControl, FlowControl, CongestionControl, Addressing{
+public abstract class TransportLayerProtocol implements Collapsable, ErrorControl, FlowControl, CongestionControl, Addressing {
 
     /**
      * set the content, which follows a session layer protocol
      *
      * @param sessionProtocolDataUnit
      */
-
     public abstract void setSessionProtocolDataUnit(SessionLayerProtocol sessionProtocolDataUnit);
 
     /**
