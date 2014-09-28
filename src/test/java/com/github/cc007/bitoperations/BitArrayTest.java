@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author Rik
  */
-public class BitOperationsTest {
+public class BitArrayTest {
 
-    public BitOperationsTest() {
+    public BitArrayTest() {
     }
 
     @BeforeClass
@@ -52,7 +52,7 @@ public class BitOperationsTest {
         byte[] result = new byte[2];
         result[0] = (byte) 0x00FF; // binary: 11111111  
         result[1] = (byte) 0x0000; // binary: 00000000
-        BitOperations.setBit(result, pos, val);
+        BitArray.setBit(result, pos, val);
         System.out.println(" Expected value: " + Integer.toString(expResult[0], 2) + " " + Integer.toString(expResult[1], 2));
         System.out.println(" Real value: " + Integer.toString(result[0], 2) + " " + Integer.toString(result[1], 2));
         Assert.assertArrayEquals(expResult, result);
@@ -60,7 +60,7 @@ public class BitOperationsTest {
         val = 0;
         expResult[0] = (byte) 0x00F7; // binary: 11110111  
         expResult[1] = (byte) 0x0010; // binary: 00010000
-        BitOperations.setBit(result, pos, val);
+        BitArray.setBit(result, pos, val);
         System.out.println(" Expected value: " + Integer.toString(expResult[0], 2) + " " + Integer.toString(expResult[1], 2));
         System.out.println(" Real value: " + Integer.toString(result[0], 2) + " " + Integer.toString(result[1], 2));
         Assert.assertArrayEquals(expResult, result);
@@ -78,11 +78,11 @@ public class BitOperationsTest {
         data[1] = (byte) 0x0000; // binary: 00000000
         int pos = 5;
         int expResult = 1;
-        int result = BitOperations.getBit(data, pos);
+        int result = BitArray.getBit(data, pos);
         assertEquals(expResult, result);
         pos = 10;
         expResult = 0;
-        result = BitOperations.getBit(data, pos);
+        result = BitArray.getBit(data, pos);
         assertEquals(expResult, result);
     }
 

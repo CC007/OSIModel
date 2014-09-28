@@ -7,13 +7,14 @@ package com.github.cc007.osimodel.protocols.networkLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.Addressing;
+import com.github.cc007.osimodel.keyfeatures.ProtocolControl;
 import com.github.cc007.osimodel.protocols.transportLayer.TransportLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public abstract class NetworkLayerProtocol implements Collapsable, Addressing {
+public abstract class NetworkLayerProtocol implements Collapsable, Addressing, ProtocolControl {
 
     /**
      * set the content, which follows a transport layer protocol
