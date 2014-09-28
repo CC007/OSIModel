@@ -12,5 +12,13 @@ import com.github.cc007.authentication.protocols.AuthenticationProtocol;
  * @author Rik
  */
 public interface Authentication {
+
+    /**
+     * This method is used to authenticate the sender of data
+     *
+     * @param authenticationData contains all needed information to authenticate
+     * the sender
+     * @return whether or not the sender has been authenticated
+     */
     public boolean authenticate(AuthenticationProtocol authenticationData);
 }
