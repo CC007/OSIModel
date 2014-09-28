@@ -6,13 +6,14 @@
 package com.github.cc007.osimodel.protocols.transportLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Collapsable;
+import com.github.cc007.osimodel.keyfeatures.ErrorControl;
 import com.github.cc007.osimodel.protocols.sessionLayer.SessionLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public interface TransportLayerProtocol extends Collapsable {
+public abstract class TransportLayerProtocol implements Collapsable, ErrorControl {
 
     /**
      * set the content, which follows a session layer protocol
@@ -20,12 +21,12 @@ public interface TransportLayerProtocol extends Collapsable {
      * @param sessionProtocolDataUnit
      */
 
-    public void setSessionProtocolDataUnit(SessionLayerProtocol sessionProtocolDataUnit);
+    public abstract void setSessionProtocolDataUnit(SessionLayerProtocol sessionProtocolDataUnit);
 
     /**
      * get the content, which follows a session layer protocol
      *
      * @return
      */
-    public SessionLayerProtocol getSessionProtocolDataUnit();
+    public abstract SessionLayerProtocol getSessionProtocolDataUnit();
 }

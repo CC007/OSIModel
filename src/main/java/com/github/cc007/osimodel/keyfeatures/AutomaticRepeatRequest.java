@@ -9,11 +9,6 @@ package com.github.cc007.osimodel.keyfeatures;
  *
  * @author Rik
  */
-public interface ErrorControl extends ErrorHandling, ErrorDetection {
-
-    /**
-     * Look in the data presented in this class and correct any errors that were
-     * found.
-     */
-    public void correctErrors();
+public abstract class AutomaticRepeatRequest implements ErrorHandling {
+    
 }
