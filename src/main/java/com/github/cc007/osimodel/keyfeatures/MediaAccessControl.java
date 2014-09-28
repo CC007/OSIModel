@@ -9,6 +9,6 @@ package com.github.cc007.osimodel.keyfeatures;
  *
  * @author Rik
  */
-public interface MediaAccessControl extends Addressing, ChannelAccessControl {
+public interface MediaAccessControl extends Addressing, ChannelAccessControl, LANSwitching, QoSControl {
     
 }
