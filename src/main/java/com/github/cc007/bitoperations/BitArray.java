@@ -56,7 +56,7 @@ public class BitArray {
      * If the bit array doesn't have a length that is dividable by 8, the last
      * byte of the returned byte array is padded with random bits
      *
-     * @return
+     * @return the bit array as byte array
      */
     public byte[] toByteArray() {
         return bitArray;
