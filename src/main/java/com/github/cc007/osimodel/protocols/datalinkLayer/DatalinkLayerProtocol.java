@@ -19,14 +19,14 @@ public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkC
     /**
      * set the content, which follows a network layer protocol
      *
-     * @param datagram
+     * @param datagram the content
      */
     public abstract void setDatagram(DatalinkLayerProtocol datagram);
 
     /**
      * get the content, which follows a network layer protocol
      *
-     * @return
+     * @return the content
      */
     public abstract DatalinkLayerProtocol getDatagram();
 

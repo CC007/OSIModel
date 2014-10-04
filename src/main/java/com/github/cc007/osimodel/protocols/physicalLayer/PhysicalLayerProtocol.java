@@ -19,14 +19,14 @@ public abstract class PhysicalLayerProtocol implements Collapsable {
     /**
      * set the content, which follows a data link layer protocol
      *
-     * @param frame
+     * @param frame the content
      */
     public abstract void setFrame(DatalinkLayerProtocol frame);
 
     /**
      * get the content, which follows a data link layer protocol
      *
-     * @return
+     * @return the content
      */
     public abstract DatalinkLayerProtocol getFrame();
 }

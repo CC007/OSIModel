@@ -19,14 +19,14 @@ public abstract class NetworkLayerProtocol implements Collapsable, Addressing, P
     /**
      * set the content, which follows a transport layer protocol
      *
-     * @param segment
+     * @param segment the content
      */
     public abstract void setSegment(TransportLayerProtocol segment);
 
     /**
      * get the content, which follows a transport layer protocol
      *
-     * @return
+     * @return the content
      */
     public abstract TransportLayerProtocol getSegment();
 }

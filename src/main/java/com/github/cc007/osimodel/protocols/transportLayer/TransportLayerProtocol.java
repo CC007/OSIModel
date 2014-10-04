@@ -21,14 +21,14 @@ public abstract class TransportLayerProtocol implements Collapsable, ErrorContro
     /**
      * set the content, which follows a session layer protocol
      *
-     * @param sessionProtocolDataUnit
+     * @param sessionProtocolDataUnit the content
      */
     public abstract void setSessionProtocolDataUnit(SessionLayerProtocol sessionProtocolDataUnit);
 
     /**
      * get the content, which follows a session layer protocol
      *
-     * @return
+     * @return the content
      */
     public abstract SessionLayerProtocol getSessionProtocolDataUnit();
 }
