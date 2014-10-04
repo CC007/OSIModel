@@ -9,12 +9,13 @@ import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.EncryptionControl;
 import com.github.cc007.osimodel.protocols.applicationLayer.ApplicationLayerProtocol;
 import com.github.cc007.osimodel.keyfeatures.CompressionControl;
+import com.github.cc007.osimodel.keyfeatures.DataFormatting;
 
 /**
  *
  * @author Rik
  */
-public interface PresentationLayerProtocol extends Collapsable, EncryptionControl, CompressionControl {
+public interface PresentationLayerProtocol extends Collapsable, EncryptionControl, CompressionControl, DataFormatting {
 
     public static final int DATA_FORMATTING_UTF8 = 0;
 
@@ -31,19 +32,5 @@ public interface PresentationLayerProtocol extends Collapsable, EncryptionContro
      * @return the content
      */
     public ApplicationLayerProtocol getApplicationProtocolDataUnit();
-
-    /**
-     * set the data formatting type of the content
-     *
-     * @param dataFormattingType the data formatting type
-     */
-    public void setDataFormattingType(int dataFormattingType);
-
-    /**
-     * get the data formatting type of the content
-     *
-     * @return the data formatting type
-     */
-    public int getDataFormattingType();
 
 }
