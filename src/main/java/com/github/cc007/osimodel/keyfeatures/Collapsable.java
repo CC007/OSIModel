@@ -19,7 +19,7 @@ public interface Collapsable extends Serializable {
      *
      * @return the byte array
      */
-    public byte[] collapse();
+    public byte[][] collapse();
 
     /**
      * Expand the byte array that follows the protocol that is used into this
@@ -27,5 +27,5 @@ public interface Collapsable extends Serializable {
      *
      * @param collapsedObject the byte array to be expanded
      */
-    public void expand(byte[] collapsedObject);
+    public void expand(byte[][] collapsedObject);
 }
