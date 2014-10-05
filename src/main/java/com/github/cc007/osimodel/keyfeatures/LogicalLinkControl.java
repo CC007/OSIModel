@@ -9,6 +9,6 @@ package com.github.cc007.osimodel.keyfeatures;
  *
  * @author Rik
  */
-public interface LogicalLinkControl extends ErrorControl, FlowControl {
+public interface LogicalLinkControl extends ErrorControl, FlowControl, Identifiable {
 
 }

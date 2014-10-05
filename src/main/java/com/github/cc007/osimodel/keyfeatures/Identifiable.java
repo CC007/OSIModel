@@ -8,7 +8,7 @@ package com.github.cc007.osimodel.keyfeatures;
 import com.github.cc007.osimodel.HeaderType;
 
 /**
- *
+ * The header of the next layer should be identifiable in a code that is unique for the protocol
  * @author Rik
  */
 public interface Identifiable {
