@@ -14,7 +14,7 @@ import java.io.Serializable;
 public interface Collapsable extends Serializable {
 
     /**
-     * Collapse this object into a byte array that follows the protocol that is
+     * Collapse this object into an array of byte arrays that follow the protocol that is
      * used.
      *
      * @return the byte array
@@ -22,7 +22,13 @@ public interface Collapsable extends Serializable {
     public byte[][] collapse();
 
     /**
-     * Expand the byte array that follows the protocol that is used into this
+     * Find the number of byte arrays that will be returned by collapse
+     * @return 
+     */
+    public int collapseCount();
+
+    /**
+     * Expand the array of byte arrays that follow the protocol that is used into this
      * object.
      *
      * @param collapsedObject the byte array to be expanded
