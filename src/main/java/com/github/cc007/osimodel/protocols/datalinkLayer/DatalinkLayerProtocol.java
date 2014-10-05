@@ -9,6 +9,7 @@ import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.LogicalLinkControl;
 import com.github.cc007.osimodel.keyfeatures.MediaAccessControl;
 import com.github.cc007.osimodel.keyfeatures.ProtocolControl;
+import com.github.cc007.osimodel.protocols.networkLayer.NetworkLayerProtocol;
 
 /**
  *
@@ -21,13 +22,13 @@ public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkC
      *
      * @param datagram the content
      */
-    public abstract void setDatagram(DatalinkLayerProtocol datagram);
+    public abstract void setDatagram(NetworkLayerProtocol datagram);
 
     /**
      * get the content, which follows a network layer protocol
      *
      * @return the content
      */
-    public abstract DatalinkLayerProtocol getDatagram();
+    public abstract NetworkLayerProtocol getDatagram();
 
 }
