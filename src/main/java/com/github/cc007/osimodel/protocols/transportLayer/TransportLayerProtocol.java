@@ -6,17 +6,17 @@
 package com.github.cc007.osimodel.protocols.transportLayer;
 
 import com.github.cc007.osimodel.keyfeatures.Addressing;
-import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.CongestionControl;
 import com.github.cc007.osimodel.keyfeatures.ErrorControl;
 import com.github.cc007.osimodel.keyfeatures.FlowControl;
+import com.github.cc007.osimodel.protocols.LayerProtocol;
 import com.github.cc007.osimodel.protocols.sessionLayer.SessionLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public abstract class TransportLayerProtocol implements Collapsable, ErrorControl, FlowControl, CongestionControl, Addressing {
+public abstract class TransportLayerProtocol implements LayerProtocol, ErrorControl, FlowControl, CongestionControl, Addressing {
 
     /**
      * set the content, which follows a session layer protocol

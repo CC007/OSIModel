@@ -5,7 +5,7 @@
  */
 package com.github.cc007.osimodel.protocols.physicalLayer;
 
-import com.github.cc007.osimodel.keyfeatures.Collapsable;
+import com.github.cc007.osimodel.protocols.LayerProtocol;
 import com.github.cc007.osimodel.protocols.datalinkLayer.DatalinkLayerProtocol;
 
 /**
@@ -14,7 +14,7 @@ import com.github.cc007.osimodel.protocols.datalinkLayer.DatalinkLayerProtocol;
  *
  * @author Rik
  */
-public abstract class PhysicalLayerProtocol implements Collapsable {
+public abstract class PhysicalLayerProtocol implements LayerProtocol {
 
     /**
      * set the content, which follows a data link layer protocol

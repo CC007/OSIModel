@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.github.cc007.osimodel.protocols.applicationLayer;
+package com.github.cc007.osimodel.protocols;
 
-import com.github.cc007.osimodel.protocols.LayerProtocol;
+import com.github.cc007.osimodel.keyfeatures.Collapsable;
 
 /**
  *
  * @author Rik
  */
-public abstract class ApplicationLayerProtocol implements LayerProtocol {
-
+public interface LayerProtocol extends Collapsable {
+    
 }

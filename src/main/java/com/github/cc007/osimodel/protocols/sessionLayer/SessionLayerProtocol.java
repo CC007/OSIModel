@@ -5,15 +5,15 @@
  */
 package com.github.cc007.osimodel.protocols.sessionLayer;
 
-import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.SessionRestoration;
+import com.github.cc007.osimodel.protocols.LayerProtocol;
 import com.github.cc007.osimodel.protocols.presentationLayer.PresentationLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public abstract class SessionLayerProtocol implements Collapsable, SessionRestoration {
+public abstract class SessionLayerProtocol implements LayerProtocol, SessionRestoration {
 
     /**
      * set the content, which follows a presentation layer protocol

@@ -5,16 +5,16 @@
  */
 package com.github.cc007.osimodel.protocols.datalinkLayer;
 
-import com.github.cc007.osimodel.keyfeatures.Collapsable;
 import com.github.cc007.osimodel.keyfeatures.LogicalLinkControl;
 import com.github.cc007.osimodel.keyfeatures.MediaAccessControl;
+import com.github.cc007.osimodel.protocols.LayerProtocol;
 import com.github.cc007.osimodel.protocols.networkLayer.NetworkLayerProtocol;
 
 /**
  *
  * @author Rik
  */
-public abstract class DatalinkLayerProtocol implements Collapsable, LogicalLinkControl, MediaAccessControl{
+public abstract class DatalinkLayerProtocol implements LayerProtocol, LogicalLinkControl, MediaAccessControl{
 
     /**
      * set the content, which follows a network layer protocol
