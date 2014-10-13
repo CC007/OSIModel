@@ -27,4 +27,16 @@ public class HeaderTypesClassException extends Exception {
     public HeaderTypesClassException(String msg) {
         super(msg);
     }
+
+    /**
+     * Constructs an instance of <code>HeaderTypesClassException</code> with the
+     * specified detail message and the cause of the Exception.
+     *
+     * @param msg the detail message.
+     * @param cause the cause of the exception
+     */
+    public HeaderTypesClassException(String msg, Throwable cause) {
+        super(msg, cause);
+    }
+
 }
