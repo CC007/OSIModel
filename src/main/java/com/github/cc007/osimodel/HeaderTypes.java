@@ -5,14 +5,11 @@
  */
 package com.github.cc007.osimodel;
 
-import com.github.cc007.osimodel.protocols.LayerProtocol;
-
 /**
  *
  * @author Rik
  */
-public interface HeaderType {
-    public byte[] asByteArray();
-    public boolean isLayerProtocol();
-    public LayerProtocol getNewLayerProtocolObject();
+public interface HeaderTypes {
+
+    public HeaderType getHeaderType(Number headerCode);
 }
