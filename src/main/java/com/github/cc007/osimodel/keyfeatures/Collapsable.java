@@ -5,6 +5,8 @@
  */
 package com.github.cc007.osimodel.keyfeatures;
 
+import com.github.cc007.osimodel.HeaderTypes;
+import com.github.cc007.osimodel.exceptions.HeaderTypesClassException;
 import java.io.Serializable;
 
 /**
@@ -32,6 +34,8 @@ public interface Collapsable extends Serializable {
      * object.
      *
      * @param collapsedObject the byte array to be expanded
+     * @param headerTypesClass the class object of the HeaderTypes utility class implementation
+     * @throws com.github.cc007.osimodel.exceptions.HeaderTypesClassException The exception you get when the HeaderTypes class causes errors
      */
-    public void expand(byte[][] collapsedObject);
+    public void expand(byte[][] collapsedObject, Class<? extends HeaderTypes> headerTypesClass) throws HeaderTypesClassException;
 }
